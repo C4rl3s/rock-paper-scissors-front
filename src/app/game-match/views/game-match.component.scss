@@ -1,0 +1,81 @@
+#main-container {
+    text-align: center; 
+    height: 100%;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+#logo {
+    width: 150px; 
+    height: auto;
+}
+
+#title {
+    margin-top: 0px; 
+    font-family: 'AuX DotBitC Xtra', sans-serif; 
+    font-size: 25px;
+}
+
+#winnerMessage {
+    font-family: 'AuX DotBitC Xtra SmallCaps', sans-serif; 
+    font-size: 17px;
+}
+
+.card {
+    width: 350px; 
+    display:inline-block; 
+    background-color: #b3b3b3b2;
+}
+
+.card-title {
+    font-family: 'AuX DotBitC Xtra SmallCaps', sans-serif; 
+    font-size: 22px;
+}
+
+#competitors-container {
+    display: flex; 
+    justify-content: center;
+}
+
+#result-container {
+    justify-content: center; 
+    width: 300px; 
+    margin: auto;
+}
+
+#result-header-container {
+    height: 24px;
+}
+
+#result-message-container {
+    height: 21px;
+}
+
+.data-header-title {
+    font-family: 'AuX DotBitC Xtra Bold', sans-serif; 
+    font-size: 17px;
+}
+
+.move-logo {
+    width: 42px; 
+    height: auto; 
+    margin: 0px;
+}
+
+.match-moves-container {
+    width: 150px; 
+    height: 70px; 
+    margin: auto;
+}
+
+#scoreboard-container {
+    display:flex; 
+    justify-content: center;
+}
+
+.scoreboard-col {
+    width: 100px; 
+    margin: auto;
+}

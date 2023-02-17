@@ -1,0 +1,99 @@
+<div id="main-container">
+
+    <div class="container">
+        <img id="logo" src="./assets/img/game-logo.png"/>                
+        <h1 id="title">ROCK, PAPER, SCISSORS!</h1>
+    </div>
+
+    <div class="container">        
+        <mat-card class="card">
+
+            <mat-card-title>
+                <span class="card-title">CHOOSE YOUR WEAPON</span>
+            </mat-card-title>
+
+            <mat-card-content>
+                <button mat-fab color="warn" (click)="playRock()" aria-label="Rock">
+                    <img class="move-logo" src="./assets/img/rock-logo.png"/>    
+                </button>
+                <button mat-fab color="warn" (click)="playPaper()" aria-label="Paper" style="margin-left: 35px;">
+                    <img class="move-logo" src="./assets/img/paper-logo.png"/>   
+                </button>
+                <button mat-fab color="warn" (click)="playScissors()" aria-label="Scissors" style="margin-left: 35px;">
+                    <img class="move-logo" src="./assets/img/scissors-logo.png"/>   
+                </button>
+            </mat-card-content>
+
+        </mat-card>
+    </div>
+
+    <div class="container">
+        <mat-card class="card">
+            
+            <mat-card-title>
+                <span class="card-title">MATCH</span>
+            </mat-card-title>
+            
+            <mat-card-content>
+                <div id="competitors-container">
+                    <div class="match-moves-container">
+                        <div>
+                            <span class="data-header-title">PLAYER</span>
+                        </div>
+                        <img class="move-logo" src={{playerMoveImg}}/>
+                    </div>
+
+                    <div class="match-moves-container">
+                        <div>
+                            <span class="data-header-title">COMPUTER</span>
+                        </div>
+                        <img class="move-logo" src={{ComputerMoveImg}}/>
+                    </div>
+                </div>
+
+                <div id="result-container">
+                    <div id="result-header-container">
+                        <span class="data-header-title">RESULT</span>
+                    </div>
+                    <div id="result-message-container">
+                        <span id="winnerMessage" [ngStyle]="{'color': getColor()}">
+                            {{winnerMessage}}
+                        </span>
+                    </div>
+                </div>
+            </mat-card-content>
+
+        </mat-card>
+    </div>
+
+    <div class="container">
+        <mat-card class="card">
+            <mat-card-title>
+                <span class="card-title">SCOREBOARD</span>
+            </mat-card-title>
+            <mat-card-content>
+                <div id="scoreboard-container">
+                    <div class="scoreboard-col">
+                        <div>
+                            <span class="data-header-title">WINS</span>
+                        </div>
+                        <p>{{wins}}</p>
+                    </div>
+                    <div class="scoreboard-col">
+                        <div>
+                            <span class="data-header-title">LOSSES</span>
+                        </div>
+                        <p>{{losses}}</p>
+                    </div>
+                    <div class="scoreboard-col">
+                        <div>
+                            <span class="data-header-title">DRAWS</span>
+                        </div>
+                        <p>{{draws}}</p>
+                    </div>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+
+</div>
